@@ -173,6 +173,7 @@ header .container {
 }
 /* --hero-- */
 .hero {
+    margin: 0 auto;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
@@ -229,16 +230,17 @@ header .container {
 
 .benefits-item-icon {
     display: flex;
+    width: 270px;
+    height: 120px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     background: var(--background-teams-color);
-    padding: 25px 100px;
     margin-bottom: 30px;
 }
 
 .benefits-item-icon:hover,
-.benefits-item-icon:hover {
+.benefits-item-icon:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -362,7 +364,6 @@ header .container {
 .teams-soc-items {
     width: 44px;
     height: 44px;
-    background-color: var(--background-body-color);
 }
 
 .teams-soc-items:not(:last-child){
@@ -384,7 +385,8 @@ header .container {
     fill: currentColor;
 }
 
-.teams-soc-link:hover {
+.teams-soc-link:hover,
+.teams-soc-link:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
@@ -410,9 +412,6 @@ header .container {
 .regular-customers-item {
     width: 170px;
     height: 92px;
-    border: 1px;
-    border-color: var(--icon-teams-color);
-    color: var(--icon-teams-color); 
 }
 
 .regular-customers-item:not(:last-child){
@@ -436,7 +435,8 @@ header .container {
     fill: currentColor;
 }
 
-.regular-customers-link:hover {
+.regular-customers-link:hover,
+.regular-customers-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -550,7 +550,8 @@ header .container {
     fill: currentColor;
 }
 
-.join-soc-link:hover {
+.join-soc-link:hover,
+.join-soc-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -611,7 +612,8 @@ h2 {
     color: var(--second-text-color);
 }
 
-.portfolio-gallery-link:hover {
+.portfolio-gallery-link:hover,
+.portfolio-gallery-link:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
